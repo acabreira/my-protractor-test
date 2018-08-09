@@ -1,0 +1,20 @@
+{
+  "name": "e2e-sample-protractor",
+  "version": "1.0.0",
+  "description": "This is a sample protractor project that I am creating",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antonio Cabreira",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-protractor-runner": "^5.0.0",
+    "grunt-shell-spawn": "^0.3.10",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.4.0",
+    "protractor-beautiful-reporter": "^1.2.3"
+  }
+}
