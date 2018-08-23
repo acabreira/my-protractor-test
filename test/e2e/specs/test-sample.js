@@ -1,11 +1,13 @@
+var samplePageObjects = require('../pageObjects/sample-pageObect.js');
+
 describe('angularjs homepage', function() {
+  var name = 'Antonio'
   it('should greet the named user', function() {
     browser.get('http://www.angularjs.org');
+    expect(samplePageObjects.getPageObjects().nameField.isPresent()).toBeTruthy();
 
-    element(by.model('yourName')).sendKeys('Antonio');
+    samplePageObjects.inputTextInNameField(name);
 
-    var greeting = element(by.binding('yourName'));
-
-    expect(greeting.getText()).toEqual('Hello Antonio!');
+    expect(samplePageObjects.getGreeting().getText()).toEqual('Hello ' + name + '!');
   });
 });
