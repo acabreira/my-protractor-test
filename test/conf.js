@@ -34,6 +34,8 @@ exports.config = {
 
   // Specify you want to use jasmine 2.x as you would with mocha. Note, 'jasmine' by default will use the latest jasmine framework.
   framework: 'jasmine',
+
+  "directConnect": true,
   
   // ----- What tests to run -----
   //
