@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Antonio Cabreira",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.3",

@@ -13,7 +13,7 @@ exports.config = {
   // 3. sauceUser/sauceKey - to use remote Selenium servers via SauceLabs.
 
   // The location of the selenium standalone server .jar file.
-  seleniumServerJar: '../node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.14.0.jar',
+  // seleniumServerJar: '../node_modules/protractor/node_modules/webdriver-manager/selenium/selenium-server-standalone-3.14.0.jar',
   // The port to start the selenium server on, or null if the server should
   // find its own unused port.
   seleniumPort: null,
@@ -21,7 +21,7 @@ exports.config = {
   // find chromedriver. This will be passed to the selenium jar as
   // the system property webdriver.chrome.driver. If null, selenium will
   // attempt to find chromedriver using PATH.
-  chromeDriver: '../node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.41',
+  // chromeDriver: '../node_modules/protractor/node_modules/webdriver-manager/selenium/chromedriver_2.41',
   // Additional command line options to pass to selenium. For example,
   // if you need to change the browser timeout, use
   // seleniumArgs: ['-browserTimeout=60'],
@@ -39,7 +39,8 @@ exports.config = {
   //
   // Spec patterns are relative to the location of this config.
   specs: [
-    './e2e/specs/*.js'
+    // './e2e/specs/*.js'
+    './e2e/specs/pivot.spec.js'
   ],
 
   // ----- Capabilities to be passed to the webdriver instance ----
