@@ -33,7 +33,7 @@ exports.config = {
   sauceKey: null,
 
   // Specify you want to use jasmine 2.x as you would with mocha. Note, 'jasmine' by default will use the latest jasmine framework.
-  framework: 'jasmine',
+  framework: 'jasmine2',
 
   "directConnect": true,
   
@@ -42,7 +42,8 @@ exports.config = {
   // Spec patterns are relative to the location of this config.
   specs: [
     // './e2e/specs/*.js'
-    './e2e/specs/pivot.spec.js'
+    './e2e/specs/pivot.spec.js',
+    './e2e/specs/test-sample.js'
   ],
 
   // ----- Capabilities to be passed to the webdriver instance ----
@@ -75,7 +76,7 @@ exports.config = {
     // If true, include stack traces in failures.
     includeStackTrace: true,
     // Default time to wait in ms before a test fails.
-    defaultTimeoutInterval: 10000
+    defaultTimeoutInterval: 10000,
   },
   
   

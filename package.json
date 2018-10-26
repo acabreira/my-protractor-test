@@ -4,7 +4,8 @@
   "description": "This is a sample protractor project that I am creating",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test1": "grunt install && protractor ./test/conf.js --grep='#smoke'",
+    "test": "grunt install && protractor ./test/conf.js --grep=@smoke"
   },
   "license": "ISC",
   "devDependencies": {

@@ -2,7 +2,7 @@ var samplePageObjects = require('../pageObjects/sample-pageObect.js');
 
 describe('angularjs homepage', function() {
   var name = 'test'
-  it('should greet the named user', function() {
+  it('should greet the named user @smoke', function() {
     browser.get('http://www.angularjs.org');
     expect(samplePageObjects.getPageObjects().nameField.isPresent()).toBeTruthy();
     samplePageObjects.inputTextInNameField(name);

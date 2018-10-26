@@ -22,6 +22,20 @@ module.exports = function(grunt) {
         configFile: "test/conf.js"
       },
       singlerun: {},
+      
+      // smoke: {
+      //   options: {
+      //     args: {
+      //       specs: [
+      //         './test/e2e/specs/test-sample.js'
+      //       ],
+      //       jasmineNodeOpts: {
+      //         grep: '@smoke',
+      //       },
+      //     }
+      //   }
+      // },
+
       auto: {
         keepAlive: true,
         options: {
@@ -54,5 +68,7 @@ module.exports = function(grunt) {
   
   grunt.loadNpmTasks('grunt-shell-spawn');
   grunt.registerTask('install',['shell:npm_install', 'shell:protractor_install']);
+
+  // grunt.registerTask('smoke', ['protractor:smoke']);
   
 };
